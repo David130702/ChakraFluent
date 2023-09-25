@@ -1,10 +1,17 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import ButtonPreview from "./components/Buttons/ButtonPreview";
+import Landingpage from "./components/Landingpage";
+import SecondButtonPreview from "./components/Buttons/secondButtonPreview";
+import CheckboxPreview from "./components/Buttons/CheckboxPreview";
 
 function App() {
   return (
     <>
-      <Box bg="brand.500" w={"100px"} h={"100px"}>
-        <Text bg="secondBrand.100">Test</Text>
+      <Box w={"100vw"} h={"100vh"} bg={"White"}>
+        <Landingpage />
+        <ButtonPreview />
+        <SecondButtonPreview />
+        <CheckboxPreview />
       </Box>
     </>
   );

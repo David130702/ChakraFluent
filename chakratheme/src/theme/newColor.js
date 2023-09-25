@@ -23,14 +23,12 @@ function lightenHexColor(hexColor, percent) {
 const originalColor = "#3498db"; // Replace with your hex color code
 const lighterColor = lightenHexColor(originalColor, 20); // 20% lighter
 
-export  function generateColorset(color) {
-  console.log("first for loop", color);
-  let colorSet = []
+export function generateColorset(color) {
+  let colorSet = [];
   for (let i = 0; i < 8; i++) {
-    console.log(lightenHexColor(color, (10*(i+1))), "in loop")
-    colorSet.push(lightenHexColor(color, (10*(i+1))))
+    colorSet.push(lightenHexColor(color, 10 * (i + 1)));
   }
-  return colorSet
+  return colorSet;
 }
 
 // console.warn( generateColorset("#3498db"));
