@@ -9,9 +9,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, SmallAddIcon } from "@chakra-ui/icons";
-import { CiFaceSmile } from "react-icons/ci";
 
-export default function CommandBarButton() {
+export default function CommandBarButton({ ...rest }) {
   return (
     <>
       <Menu>
@@ -20,9 +19,10 @@ export default function CommandBarButton() {
           variant={"iconButton"}
           rightIcon={<ChevronDownIcon color={"grey"} />}
           leftIcon={<SmallAddIcon />}
+          {...rest}
         >
           <Text color={"black"} fontSize={14}>
-            TEXT
+            Text
           </Text>
         </MenuButton>
         <MenuList>

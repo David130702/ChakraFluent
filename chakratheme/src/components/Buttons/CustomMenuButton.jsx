@@ -10,7 +10,7 @@ import {
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { CiFaceSmile } from "react-icons/ci";
 
-export default function MenuButtonprev() {
+export default function CustomMenuButton({ ...rest }) {
   return (
     <>
       <Menu>
@@ -18,6 +18,7 @@ export default function MenuButtonprev() {
           as={Button}
           variant={"iconButton"}
           rightIcon={<ChevronDownIcon ml={-2} />}
+          {...rest}
         >
           <CiFaceSmile />
         </MenuButton>

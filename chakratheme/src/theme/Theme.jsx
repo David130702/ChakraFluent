@@ -3,7 +3,6 @@ import { generateColorset } from "./newColor";
 
 const red = "#FF0000";
 const blue = "#3978d2";
-const green = "#008000";
 
 export const customTheme = extendTheme({
   colors: {
@@ -90,6 +89,18 @@ export const customTheme = extendTheme({
       },
       defaultProps: {
         variant: "primary",
+        colorScheme: "primary",
+      },
+    },
+    Input: {
+      variants: {
+        primary: {
+          borderRadius: 0,
+        },
+      },
+      defaultProps: {
+        variant: "primary",
+        size: "lg",
         colorScheme: "primary",
       },
     },

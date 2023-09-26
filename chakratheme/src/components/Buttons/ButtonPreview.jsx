@@ -2,12 +2,6 @@ import React from "react";
 import MainButton from "./MainButton";
 import { Box, Text, HStack, Divider } from "@chakra-ui/react";
 
-//DOKU
-/* To use this button you only need to import Mainbutton which by default has some styles like the Primary Button from fluent UI 
-To modify the button you just need to change the props of the button as shown below which overwrites the default styles 
-There are no stylings you can't add or overwrite. 
-*/
-
 export default function ButtonPreview() {
   return (
     <>

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Text, HStack, Divider, Button } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { AiOutlineSearch } from "react-icons/ai";
-import MenuButtonprev from "../Buttons/MenuButtonprev";
+import MenuButton from "../Buttons/CustomMenuButton";
 import CommandBarButton from "../Buttons/CommandBarButton";
 
 export default function IconButtonPreview() {
@@ -17,7 +17,7 @@ export default function IconButtonPreview() {
           <Button variant={"iconButton"}>
             <AiOutlineSearch />
           </Button>
-          <MenuButtonprev />
+          <MenuButton />
           <CommandBarButton />
           <Button variant={"iconButton"} leftIcon={<EmailIcon />}>
             <Text color={"black"} fontSize={14}>
