@@ -21,8 +21,12 @@ export default function ChoiceGroup() {
           <RadioGroup>
             <Stack direction="row">
               <Radio value="1">First</Radio>
-              <Radio value="2">Second</Radio>
-              <Radio value="3">Third</Radio>
+              <Radio value="2" isChecked>
+                second
+              </Radio>
+              <Radio value="3" isDisabled>
+                Third
+              </Radio>
             </Stack>
           </RadioGroup>
         </HStack>

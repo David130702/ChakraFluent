@@ -56,8 +56,23 @@ export const customTheme = extendTheme({
       },
     },
     Radio: {
+      variants: {
+        primary: {
+          control: {
+            borderColor: "black",
+            border: "1px solid black",
+            _hover: {},
+            _checked: {
+              color: "#3978d2",
+              borderColor: "#3978d2",
+            },
+          },
+        },
+      },
       defaultProps: {
+        variant: "primary",
         size: "lg",
+        colorScheme: "primary",
       },
     },
   },

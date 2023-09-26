@@ -5,6 +5,7 @@ import SecondButtonPreview from "./components/Buttons/secondButtonPreview";
 import CheckboxPreview from "./components/Checkbox/CheckboxPreview";
 import IconButtonPreview from "./components/IconButtons/IconButtonPreview";
 import ChoiceGroup from "./components/ChoiceGroup/ChoiceGroup";
+import SliderPreview from "./components/Slider/SliderPreview";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <IconButtonPreview />
         <CheckboxPreview />
         <ChoiceGroup />
+        <SliderPreview />
       </Box>
     </>
   );
