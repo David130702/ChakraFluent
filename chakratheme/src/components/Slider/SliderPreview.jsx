@@ -1,5 +1,14 @@
 import { useState, useRef } from "react";
-import { Box, Text, HStack, Divider } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  HStack,
+  Divider,
+  Slider,
+  SliderTrack,
+  SliderFilledTrack,
+  SliderThumb,
+} from "@chakra-ui/react";
 import CustomSlider from "./CustomSlider";
 
 export default function SliderPreview() {
@@ -11,7 +20,9 @@ export default function SliderPreview() {
         </Text>
         <Divider size={"100"} />
         <HStack pt={"20px"} spacing={"40px"}>
-          <CustomSlider />
+          <CustomSlider size={"200px"} />
+          <CustomSlider size={"200px"} disabled={true} />
+          <CustomSlider orientation="vertical" size={"200px"} />
         </HStack>
       </Box>
     </>
