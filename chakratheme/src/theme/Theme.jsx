@@ -75,5 +75,23 @@ export const customTheme = extendTheme({
         colorScheme: "primary",
       },
     },
+    Slider: {
+      variants: {
+        primary: {
+          thumb: {},
+          track: {
+            bg: "#8a8886",
+          },
+          filledTrack: {
+            bg: "#323130",
+            _hover: { bg: "#3978d2" },
+          },
+        },
+      },
+      defaultProps: {
+        variant: "primary",
+        colorScheme: "primary",
+      },
+    },
   },
 });
