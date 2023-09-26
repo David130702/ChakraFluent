@@ -55,5 +55,10 @@ export const customTheme = extendTheme({
         size: "lg",
       },
     },
+    Radio: {
+      defaultProps: {
+        size: "lg",
+      },
+    },
   },
 });

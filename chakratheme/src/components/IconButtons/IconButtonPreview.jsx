@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Text, HStack, Divider, Button } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { AiOutlineSearch } from "react-icons/ai";
-import MenuButtonprev from "./MenuButtonprev";
-import CommandBarButton from "./CommandBarButton";
+import MenuButtonprev from "../Buttons/MenuButtonprev";
+import CommandBarButton from "../Buttons/CommandBarButton";
 
 export default function IconButtonPreview() {
   return (

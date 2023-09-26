@@ -17,7 +17,7 @@ export default function MenuButtonprev() {
         <MenuButton
           as={Button}
           variant={"iconButton"}
-          rightIcon={<ChevronDownIcon />}
+          rightIcon={<ChevronDownIcon ml={-2} />}
         >
           <CiFaceSmile />
         </MenuButton>
