@@ -95,7 +95,14 @@ export const customTheme = extendTheme({
     Input: {
       variants: {
         primary: {
-          borderRadius: 0,
+          field: {
+            w: "auto",
+            borderRadius: 0,
+            _focus: {
+              border: " 2px solid #3978d2",
+            },
+            border: "1px solid black",
+          },
         },
       },
       defaultProps: {

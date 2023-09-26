@@ -1,5 +1,15 @@
 DOKU zu Chakra UI Fluent customTheme
 
+Run:
+
+npm i
+npm run dev
+
+im src Ordner zum Starten
+
+
+
+
 Die wichtigsten Komponenten von Fluent UI sind im theme nachgebaut, sodass sie nur von Chakra importiert werden müssen, wie sie normalerweise 
 importiert werden. Da es aber ein paar Componenten gibt die nicht ausreichend mit dem Theme verändert werden konnten, 
 gibt es sogennante Custom komponenten. welche mit dem prefix "Custom" ausgestattet sind.
