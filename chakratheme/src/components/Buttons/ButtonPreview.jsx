@@ -22,12 +22,13 @@ export default function ButtonPreview() {
             color={"black"}
             border={"black"}
             bg={"white"}
+            _hover={{ bg: "lightgrey" }}
           />
           <MainButton
             txt={"Primary"}
             color={"white"}
             border={"mainColor"}
-            _hover={{ bg: "brand.600" }}
+            _hover={{ bg: "brand.100" }}
           />
         </HStack>
       </Box>

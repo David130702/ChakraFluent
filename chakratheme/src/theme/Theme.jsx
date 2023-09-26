@@ -26,15 +26,32 @@ export const customTheme = extendTheme({
       600: generateColorset(red)[5],
     },
   },
-  Button: {
-    baseStyle: {
-      w: "100px",
-      h: "35px",
-      bg: "mainColor",
-      borderRadius: 0,
+  components: {
+    Button: {
+      baseStyle: {
+        w: "100px",
+        h: "35px",
+        color: "White",
+        borderRadius: 0,
+      },
+      defaultProps: {
+        colorScheme: "blue",
+      },
+      variants: {
+        iconButton: {
+          bg: "none",
+          _hover: { bg: "lightgrey" },
+          color: "#3978d2",
+          w: "auto",
+          h: "auto",
+          px: 0,
+          py: 0,
+          fontSize: "25px",
+        },
+      },
     },
     Checkbox: {
-      baseStyle: {
+      defaultProps: {
         size: "lg",
       },
     },

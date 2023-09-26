@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Text, HStack, Divider } from "@chakra-ui/react";
-import MainCheckbox from "./MainCheckbox";
+import { Box, Text, HStack, Divider, Checkbox } from "@chakra-ui/react";
 
 export default function CheckboxPreview() {
   return (
@@ -10,7 +9,10 @@ export default function CheckboxPreview() {
       </Text>
       <Divider size={"100"} />
       <HStack pt={"20px"} spacing={"40px"}>
-        <MainCheckbox />
+        <Checkbox />
+        <Checkbox defaultChecked></Checkbox>
+        <Checkbox isDisabled />
+        <Checkbox isDisabled isChecked />
       </HStack>
     </Box>
   );

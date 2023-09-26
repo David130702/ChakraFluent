@@ -23,13 +23,14 @@ export default function SecondButtonPreview() {
             color={"black"}
             border={"black"}
             bg={"white"}
+            _hover={{ bg: "lightgrey" }}
           />
           <CompoundButton
             txt={"Primary"}
             stxt={"With some text"}
             color={"white"}
             border={"mainColor"}
-            _hover={{ bg: "brand.600" }}
+            _hover={{ bg: "brand.200" }}
           />
         </HStack>
       </Box>
