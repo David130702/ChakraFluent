@@ -3,7 +3,6 @@ import { generateColorset } from "./newColor";
 
 const red = "#FF0000";
 const blue = "#3978d2";
-const green = "#008000";
 
 export const customTheme = extendTheme({
   colors: {
@@ -70,8 +69,8 @@ export const customTheme = extendTheme({
           color: "#3978d2",
           w: "auto",
           h: "auto",
-          px: 0,
-          py: 0,
+          px: 1,
+          py: 1,
           fontSize: "25px",
         },
       },
@@ -79,6 +78,63 @@ export const customTheme = extendTheme({
     Checkbox: {
       defaultProps: {
         size: "lg",
+      },
+    },
+    Radio: {
+      variants: {
+        primary: {
+          control: {
+            borderColor: "black",
+            border: "1px solid black",
+            _hover: {},
+            _checked: {
+              color: "#3978d2",
+              borderColor: "#3978d2",
+            },
+          },
+        },
+      },
+      defaultProps: {
+        variant: "primary",
+        size: "lg",
+        colorScheme: "primary",
+      },
+    },
+    Slider: {
+      variants: {
+        primary: {
+          thumb: {},
+          track: {
+            bg: "#8a8886",
+          },
+          filledTrack: {
+            bg: "#323130",
+            _hover: { bg: "#3978d2" },
+          },
+        },
+      },
+      defaultProps: {
+        variant: "primary",
+        colorScheme: "primary",
+      },
+    },
+    Input: {
+      variants: {
+        primary: {
+          field: {
+            w: "auto",
+            borderRadius: 0,
+            _focus: {
+              border: " 2px solid #3978d2",
+            },
+            border: "1px solid black",
+          },
+        },
+      },
+      defaultProps: {
+        variant: "primary",
+        size: "lg",
+        colorScheme: "primary",
       },
     },
   },

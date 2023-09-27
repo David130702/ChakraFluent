@@ -1,0 +1,43 @@
+DOKU zu Chakra UI Fluent customTheme
+
+Run:
+
+npm i
+npm run dev
+
+im src Ordner zum Starten
+
+
+
+
+Die wichtigsten Komponenten von Fluent UI sind im theme nachgebaut, sodass sie nur von Chakra importiert werden müssen, wie sie normalerweise 
+importiert werden. Da es aber ein paar Componenten gibt die nicht ausreichend mit dem Theme verändert werden konnten, 
+gibt es sogennante Custom komponenten. welche mit dem prefix "Custom" ausgestattet sind.
+
+Hier nun einige Beispiele zur verwendung: 
+
+
+
+Theme beeinflusste Komponenten: 
+
+import { Button } from "@chakra-ui/react";
+
+<Button> Hier Text vom Button </Button>              //dies ist dann der Standard Button von Fluent UI 
+
+
+
+
+
+Verwendung von Custom beeinflussten Komponenten:
+
+import { CustomMenuButton } from "*/Route zum Menu Button*"
+
+
+<CustomMenuButton txt={"Das wird im Button angezigt"}></CustomMenuButton>      //alle Custom Komponente sind mit ...rest ausgestattet um sie nach belieben zu verändern    
+
+
+
+Bei den Custom Komponenten gibt es einige wichtige bzw notwendige props die mitgegeben werden können/müssen um diese einfach verwenden zu können
+
+
+Hier nun eine Liste von Custom Komponenten und welche props sie erwarten/haben
