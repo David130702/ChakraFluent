@@ -4,6 +4,7 @@ import Landingpage from "./components/Landingpage";
 import SecondButtonPreview from "./components/Buttons/secondButtonPreview";
 import CheckboxPreview from "./components/Buttons/CheckboxPreview";
 import IconButtonPreview from "./components/Buttons/IconButtonPreview";
+import DropdownPreview from "./components/dropdowns/DropdownPreview";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <SecondButtonPreview />
         <IconButtonPreview />
         <CheckboxPreview />
+        <DropdownPreview />
       </Box>
     </>
   );

@@ -27,6 +27,32 @@ export const customTheme = extendTheme({
     },
   },
   components: {
+    MenuList: {
+
+      parts: ["list"],
+      baseStyle: {
+        list: {
+          borderRadius: 0,
+        }
+      }
+    },
+    Select: {
+      parts: ["field", "icon"],
+      baseStyle: {
+        field: {
+          borderRadius: 2,
+          color: "#605e5c",
+          borderColor: "#605e5c",
+          _hover: { color: "black", borderColor: "black" },
+        },
+        icon: {
+          color: "#605e5c",
+          _hover: { color: "black" },
+          width: "20px",
+          fontSize: "2rem",
+        },
+      },
+    },
     Button: {
       baseStyle: {
         w: "100px",
